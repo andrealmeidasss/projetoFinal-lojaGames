@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSB Games</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navBar">
+                <img src="logo-nav.png" alt="" class="logo-loja" />
+            </div>
+            <div class="lista-nav">
+                <ul>
+                    <li><a href="">Aventura</a></li>
+                    <li><a href="">Ação</a></li>
+                    <li><a href="">Arcade</a></li>
+                    <li><a href="">Corrida</a></li>
+                    <li><a href="">Esportes</a></li>
+                    <li><a href="">RPG</a></li>
+                    <li><a href="">Simulação</a></li>
+                    <li>
+                        <h3 class="button open-modal"> <img src="logo-buy.png" alt="" class="logo-buy" /> COMPRAR</h3>
+                        <div id="modal" class="modal">
+
+                            <div class="modal-conteudo">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h1>Carrinho</h1>
+                                <img src="icons8-comprar-40.png" alt="" class="icon-pedido">
+                                <div class="jogos-carrinho">
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/184139382/a3405a1dad.jpg"
+                                            alt="">
+                                        <h2>R$ 200,00</h2>
+
+                                        <button class="add" id="fifa"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://rootjogos.net/wp-content/uploads/2014/07/GTA-V-PS4-cover-ts.jpg"
+                                            alt="">
+                                        <h2>R$ 40,00</h2>
+                                        <button class="add" id="gta"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://m.media-amazon.com/images/I/81qJ1ui8bzL._AC_SL1500_.jpg"
+                                            alt="">
+                                        <h2>R$ 50,00</h2>
+                                        <button class="add" id="gow"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302329/assassins-creed-iv-black-flag-midia-digital-psn-ps4-ps5-e28c8c84.jpg"
+                                            alt="">
+                                        <h2>R$ 80,00</h2>
+                                        <button class="add" id="assassino"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302630/marvels-spider-man-midia-digital-psn-ps4-ps5-31a20bab.jpg"
+                                            alt="">
+                                        <h2>R$ 100,00</h2>
+                                        <button class="add" id="spider"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302875/tony-hawks-pro-skater-1-2-midia-digital-psn-ps4-ps5-353ddd29.jpg"
+                                            alt="">
+                                        <h2>R$ 90,00</h2>
+                                        <button class="add" id="skate"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301700/call-of-duty-modern-warfare-2-campaign-remastered-midia-digital-psn-ps4-c4597848.jpg"
+                                            alt="">
+                                        <h2>R$ 60,00</h2>
+                                        <button class="add" id="cod2"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301694/call-of-duty-black-ops-4-iiii-midia-digital-psn-ps4-bd450dd2.jpg"
+                                            alt="">
+                                        <h2>R$ 50,00</h2>
+                                        <button class="add" id="codBO"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301932/lego-jurassic-world-o-mundo-dos-dinossauros-100-pt-br-psn-ps4-6fb09658.jpg"
+                                            alt="">
+                                        <h2>R$ 20,00</h2>
+                                        <button class="add" id="lego"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302512/far-cry-5-gold-edition-midia-digital-psn-ps4-ps5-d042289b.jpg"
+                                            alt="">
+                                        <h2>R$ 120,00</h2>
+                                        <button class="add" id="farcry"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302476/doom-midia-digital-psn-ps4-ps5-63b69dd0.jpg"
+                                            alt="">
+                                        <h2>R$ 170,00</h2>
+                                        <button class="add" id="doom"> Adicionar </button>
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/184138643/12edf3519d.jpg"
+                                            alt="">
+                                        <h2>135,00</h2>
+                                        <button class="add" id="cod3"> Adicionar </button>
+                                    </div>
+                                </div>
+
+
+
+                                </main>
+                                <div id="fade" class="hide"></div>
+                                <div id="modal" class="hide">
+                                    <br>
+                                    <input type="text" id="jogo1"></input>
+                                    <input type="number" name="qtd" id="qtd-game" placeholder="Escolha a quantidade">
+                                    <button id="add-carrinho">Adicionar ao carrinho</button>
+                                </div><br>
+
+
+
+                                <div>
+                                    <h3>Resumo do Pedido</h3>
+                                    <div id="carrinho"></div>
+                                </div>
+                                <div>
+                                    <h3>Valor Total do Pedido</h3>
+                                    <div id="valorTotal"></div>
+                                </div>
+                                <a href="redirecionamento.html"><button>Comprar</button></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Carrossel Slide-->
+        <div class="slider">
+            <div class="slides">
+                <div class="descricao">
+                    <img src="https://www.kabum.com.br/hotsite/nvidiagameon/img/logo-forzahorizon.png"
+                        class="img-descricao" />
+                    <p>
+                        Estações dinâmicas mudam tudo no maior festival automotivo do
+                        mundo. Participe sozinho ou junte os amigos para explorar a linda
+                        e histórica Grã-Bretanha num mundo aberto compartilhado. Colete,
+                        modifique e pilote mais de 450 carros. Corra, faça proeza, crie e
+                        explore. Escolha seu caminho para se tornar um superastro do
+                        Horizon.
+                    </p>
+                    <br />
+                    <h3 class="button"> <img src="icon-info2.png" alt="" class="logo-buy" /> <a
+                            href="https://www.youtube.com/watch?v=RCRYs7yfeo4" target="_blank">SAIBA MAIS</a></h3>
+                </div>
+                <img src="https://wallpaperaccess.com/full/3516099.jpg" alt="Imagem 1" class="img-slides" />
+            </div>
+            <div class="slides">
+                <div class="descricao">
+                    <img src="https://logosmarcas.net/wp-content/uploads/2021/03/GTA-5-Logo.png"
+                        class="img-descricao" />
+                    <p>
+                        O jogo se passa no estado ficcional de San Andreas, com a história
+                        da campanha um jogador seguindo três criminosos e seus esforços
+                        para realizarem assaltos sob a pressão de uma agência
+                        governamental. O mundo aberto permite que os jogadores naveguem
+                        livremente pelas áreas rurais e urbanas de San Andreas.
+                    </p>
+                    <br />
+                    <h3 class="button"> <img src="icon-info2.png" alt="" class="logo-buy" /> <a
+                            href="https://www.youtube.com/watch?v=QkkoHAzjnUs" target="_blank">SAIBA MAIS</a></h3>
+                </div>
+                <img src="https://rare-gallery.com/uploads/posts/379055-4k-wallpaper.jpg" class="img-slides" />
+            </div>
+            <div class="slides">
+                <div class="descricao">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/2/2a/Assassin%27s_Creed_Logo.svg/1280px-Assassin%27s_Creed_Logo.svg.png"
+                        alt="" class="img-descricao" />
+                    <p>
+                        No século IX d.C., Bagdá estava em seu auge na vanguarda do mundo
+                        em ciência, arte, inovação e comércio. Em meio à efervescente
+                        paisagem urbana, um jovem órfão afligido por um passado trágico
+                        precisa navegar pelas ruas para sobreviver.
+                    </p>
+                    <br />
+                    <h3 class="button"> <img src="icon-info2.png" alt="" class="logo-buy" /> <a
+                            href="https://www.youtube.com/watch?v=ItxcFUN6FiU" target="_blank">SAIBA MAIS</a></h3>
+                </div>
+                <img src="https://moewalls.com/wp-content/uploads/2022/11/crimson-sunset-assassins-creed-codename-red-thumb.jpg"
+                    alt="Imagem 3" class="img-slides" />
+            </div>
+            <div class="slides">
+                <div class="descricao">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Call_of_Duty_Advanced_Warfare.png"
+                        class="img-descricao" /><br /><br />
+                    <p>
+                        UMA NOVA ERA DE COMBATE. Call of Duty®: Advanced Warfare prevê os
+                        poderosos campos de batalha do futuro, em que tanto a tecnologia
+                        quanto as táticas evoluíram e geraram uma nova era de combate. Com
+                        um desempenho formidável, Kevin Spacey, vencedor do Oscar®,
+                        encarna Jonathan Irons, dando forma a essa visão assustadora da
+                        guerra no futuro.
+                    </p>
+                    <br />
+                    <h3 class="button"> <img src="icon-info2.png" alt="" class="logo-buy" /> <a
+                            href="https://www.youtube.com/watch?v=sFu5qXMuaJU" target="_blank">SAIBA MAIS</a></h3>
+                </div>
+                <img src="https://cdn.wallpapersafari.com/99/41/AcE79h.jpg" alt="Imagem 4" class="img-slides" />
+            </div>
+            <div class="slides">
+                <div class="descricao">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Far_Cry_3_Logo.png"
+                        class="img-descricao" /><br /><br />
+                    <p>
+                        Far Cry 3 é um jogo em mundo aberto de tiro na primeira pessoa
+                        (FPS), com elementos de role-playing game (RPG), incluindo pontos
+                        de experiência, árvores de habilidade, e um sistema de crafting. O
+                        jogador tem a capacidade de se esconder atrás de objetos para
+                        fugir das linhas de visão e também para olhar em redor e disparar
+                        sem ver.
+                    </p>
+                    <br />
+                    <h3 class="button"> <img src="icon-info2.png" alt="" class="logo-buy" /><a
+                            href="https://www.youtube.com/watch?v=Jn2njSaD4dk" target="_blank">SAIBA MAIS</a></h3>
+                </div>
+                <img src="https://wallpapercave.com/wp/wp1843175.jpg" alt="Imagem 5" class="img-slides" />
+            </div>
+            <a class="seta1">&#10094;</a>
+            <a class="seta2">&#10095;</a>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="games">
+            <h1>Mais Vendidos</h1>
+            <ul class="img-lista">
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/184139382/a3405a1dad.jpg" alt="" />
+                    <p>R$ 200,00</p>
+                    <p class="botao-compra"><a href="https://www.youtube.com/watch?v=GvXbIAuIEq0" target="_blank">Saiba
+                            mais</a></p>
+                </li>
+                <li>
+                    <img src="https://rootjogos.net/wp-content/uploads/2014/07/GTA-V-PS4-cover-ts.jpg" alt="" />
+                    <p>R$ 40,00</p>
+                    <p class="botao-compra"><a href="https://www.youtube.com/watch?v=QkkoHAzjnUs" target="_blank">Saiba
+                            mais</a></p>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/I/81qJ1ui8bzL._AC_SL1500_.jpg" />
+                    <p>R$ 50,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/FyIwEFXOcaE" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302329/assassins-creed-iv-black-flag-midia-digital-psn-ps4-ps5-e28c8c84.jpg"
+                        alt=" " />
+                    <p>R$ 80,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/XJr8BY7fTdQ" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302630/marvels-spider-man-midia-digital-psn-ps4-ps5-31a20bab.jpg"
+                        alt="" />
+                    <p>R$ 100,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/xJQI7BYDkV8" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302875/tony-hawks-pro-skater-1-2-midia-digital-psn-ps4-ps5-353ddd29.jpg"
+                        alt="" />
+                    <p>R$ 90,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/22MQBu_jiH4" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301700/call-of-duty-modern-warfare-2-campaign-remastered-midia-digital-psn-ps4-c4597848.jpg"
+                        alt="" />
+                    <p>R$ 60,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/r72GP1PIZa0" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301694/call-of-duty-black-ops-4-iiii-midia-digital-psn-ps4-bd450dd2.jpg"
+                        alt="" />
+                    <p>R$ 50,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/OPTOVQFRggI" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301932/lego-jurassic-world-o-mundo-dos-dinossauros-100-pt-br-psn-ps4-6fb09658.jpg"
+                        alt="" />
+                    <p>R$ 20,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/I6qMtz9gRbE" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302512/far-cry-5-gold-edition-midia-digital-psn-ps4-ps5-d042289b.jpg"
+                        alt="" />
+                    <p>R$ 120,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/nWAo_PpCpfs" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302476/doom-midia-digital-psn-ps4-ps5-63b69dd0.jpg"
+                        alt="" />
+                    <p>R$ 170,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/RO90omga8D4" target="_blank">Saiba mais</a></p>
+                </li>
+                <li>
+                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/184138643/12edf3519d.jpg" alt="" />
+                    <p>R$ 135,00</p>
+                    <p class="botao-compra"><a href="https://youtu.be/1xjCdN_rWCE" target="_blank">Saiba mais</a></p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <!-- modal do desenvolvedor -->
+    <div id="modal-contato" class="modal-contato">
+        <div class="modal-conteudo">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h1>André Almeida</h1>
+            <img src="foto-dev.jpeg" alt="Imagem do desenvolvedor" class="foto-dev">
+            <h3>Desenvolvedor Front-End</h3>
+            <p><a href="https://api.whatsapp.com/send?phone=5561985180398" target="_blank">Contato</a></p>
+            <p><a href="https://github.com/andrealmeidasss" target="_blank">GitHub</a></p>
+            <p><a href="https://andrealmeidasss.github.io/portfolio/" target="_blank">Portfólio</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <h4>Desenvolvido por</h4>
+        <h3><a onclick="openModal()">&copy;AndréAlmeida</a></h3>
+    </footer>
+
+</body>
+
+</html>

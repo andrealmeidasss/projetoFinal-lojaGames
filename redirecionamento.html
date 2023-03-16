@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra realizada!</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <nav>
+        <div class="navBar">
+            <img src="logo-nav.png" alt="" class="logo-loja" />
+        </div>
+        <div class="lista-nav">
+            <ul>
+                <li><a href="">Aventura</a></li>
+                <li><a href="">Ação</a></li>
+                <li><a href="">Arcade</a></li>
+                <li><a href="">Corrida</a></li>
+                <li><a href="">Esportes</a></li>
+                <li><a href="">RPG</a></li>
+                <li><a href="">Simulação</a></li>
+                <li>
+                    <h3 class="button open-modal"> <img src="logo-buy.png" alt="" class="logo-buy" /> COMPRAR</h3>
+                    <div id="modal" class="modal">
+
+                        <div class="modal-conteudo">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h1>Carrinho</h1>
+                            <img src="icons8-comprar-40.png" alt="" class="icon-pedido">
+                            <div class="jogos-carrinho">
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/184139382/a3405a1dad.jpg"
+                                        alt="">
+                                    <h2>R$ 200,00</h2>
+
+                                    <button class="add" id="fifa"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://rootjogos.net/wp-content/uploads/2014/07/GTA-V-PS4-cover-ts.jpg"
+                                        alt="">
+                                    <h2>R$ 40,00</h2>
+                                    <button class="add" id="gta"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://m.media-amazon.com/images/I/81qJ1ui8bzL._AC_SL1500_.jpg" alt="">
+                                    <h2>R$ 50,00</h2>
+                                    <button class="add" id="gow"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302329/assassins-creed-iv-black-flag-midia-digital-psn-ps4-ps5-e28c8c84.jpg"
+                                        alt="">
+                                    <h2>R$ 80,00</h2>
+                                    <button class="add" id="assassino"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302630/marvels-spider-man-midia-digital-psn-ps4-ps5-31a20bab.jpg"
+                                        alt="">
+                                    <h2>R$ 100,00</h2>
+                                    <button class="add" id="spider"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302875/tony-hawks-pro-skater-1-2-midia-digital-psn-ps4-ps5-353ddd29.jpg"
+                                        alt="">
+                                    <h2>R$ 90,00</h2>
+                                    <button class="add" id="skate"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301700/call-of-duty-modern-warfare-2-campaign-remastered-midia-digital-psn-ps4-c4597848.jpg"
+                                        alt="">
+                                    <h2>R$ 60,00</h2>
+                                    <button class="add" id="cod2"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301694/call-of-duty-black-ops-4-iiii-midia-digital-psn-ps4-bd450dd2.jpg"
+                                        alt="">
+                                    <h2>R$ 50,00</h2>
+                                    <button class="add" id="codBO"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104301932/lego-jurassic-world-o-mundo-dos-dinossauros-100-pt-br-psn-ps4-6fb09658.jpg"
+                                        alt="">
+                                    <h2>R$ 20,00</h2>
+                                    <button class="add" id="lego"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302512/far-cry-5-gold-edition-midia-digital-psn-ps4-ps5-d042289b.jpg"
+                                        alt="">
+                                    <h2>R$ 120,00</h2>
+                                    <button class="add" id="farcry"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/104302476/doom-midia-digital-psn-ps4-ps5-63b69dd0.jpg"
+                                        alt="">
+                                    <h2>R$ 170,00</h2>
+                                    <button class="add" id="doom"> Adicionar </button>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.awsli.com.br/800x800/1563/1563209/produto/184138643/12edf3519d.jpg"
+                                        alt="">
+                                    <h2>135,00</h2>
+                                    <button class="add" id="cod3"> Adicionar </button>
+                                </div>
+                            </div>
+
+
+
+                            </main>
+                            <div id="fade" class="hide"></div>
+                            <div id="modal" class="hide">
+                                <br>
+                                <input type="text" id="jogo1"></input>
+                                <input type="number" name="qtd" id="qtd-game" placeholder="Escolha a quantidade">
+                                <button id="add-carrinho">Adicionar ao carrinho</button>
+                            </div><br>
+
+
+
+                            <div>
+                                <h3>Resumo do Pedido</h3>
+                                <div id="carrinho"></div>
+                            </div>
+                            <div>
+                                <h3>Valor Total do Pedido</h3>
+                                <div id="valorTotal"></div>
+                            </div>
+                            <a href="redirecionamento.html"><button>Comprar</button></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <main class="pedido-feito">
+            <img src="icon-sucesso.png" alt="">
+            <h3>Pedido realizado com SUCESSO!</h3>
+            <h4>Aproveite seus jogos!</h4>
+            <a href="index.html"><button>Voltar</button></a>
+        </main>
+    </div>
+
+ <!-- modal do desenvolvedor -->
+ <div id="modal-contato" class="modal-contato">
+    <div class="modal-conteudo">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h1>André Almeida</h1>
+        <img src="foto-dev.jpeg" alt="Imagem do desenvolvedor" class="foto-dev">
+        <h3>Desenvolvedor Front-End</h3>
+        <p><a href="https://api.whatsapp.com/send?phone=5561985180398" target="_blank">Contato</a></p>
+        <p><a href="https://github.com/andrealmeidasss" target="_blank">GitHub</a></p>
+        <p><a href="https://andrealmeidasss.github.io/portfolio/" target="_blank">Portfólio</a></p>
+    </div>
+</div>
+    <footer>
+        <h4>Desenvolvido por</h4>
+        <h3><a onclick="openModal()">&copy;AndréAlmeida</a></h3>
+    </footer>
+
+    <script>
+        // modal do desenvolvedor
+function openModal() {
+  document.getElementById("modal-contato").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal-contato").style.display = "none";
+}
+
+// modal do carrinho
+
+var modal = document.getElementById("modal");
+var btn = document.querySelector(".open-modal");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function abrirModal1() {
+  modal.style.display = "block";
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+};
+
+// carrinho de compras
+
+var add = document.querySelectorAll(".add");
+var jogo1 = document.getElementById("jogo1");
+var fifa = document.getElementById(`fifa`);
+var gow = document.getElementById(`gow`);
+var gta = document.getElementById(`gta`);
+var assassino = document.getElementById(`assassino`);
+var spider = document.getElementById(`spider`);
+var skate = document.getElementById(`skate`);
+var cod2 = document.getElementById(`cod2`);
+var codBO = document.getElementById(`codBO`);
+var lego = document.getElementById(`lego`);
+var farcry = document.getElementById(`farcry`);
+var doom = document.getElementById(`doom`);
+var cod3 = document.getElementById(`cod3`);
+
+var addCarrinho = document.getElementById("add-carrinho");
+var carrinho = document.getElementById("carrinho");
+var txtquantidade = document.getElementById("quantidade");
+var valor = document.getElementById("valor");
+var valorTotal = document.getElementById("valorTotal");
+var qtdGame = document.getElementById("qtd-game");
+var soma = 0;
+var totalGame = 0;
+
+fifa.addEventListener(`click`, () => {
+  valorp = 200.0;
+  jogo1.value = "FIFA 23";
+});
+gow.addEventListener(`click`, () => {
+  jogo1.value = "God of War";
+  valorp = 90.0;
+});
+gta.addEventListener(`click`, () => {
+  jogo1.value = "GTA V";
+  valorp = 40.0;
+});
+assassino.addEventListener(`click`, () => {
+  jogo1.value = "Assassin's Creed IV ";
+  valorp = 80.0;
+});
+
+spider.addEventListener(`click`, () => {
+  jogo1.value = "Spider-Man";
+  valorp = 100.0;
+});
+
+skate.addEventListener(`click`, () => {
+  jogo1.value = "Tony Hawk's Pro Skater 1+2";
+  valorp = 90.0;
+});
+
+cod2.addEventListener(`click`, () => {
+  jogo1.value = "Call of Duty - Modern Warfare II";
+  valorp = 60.0;
+});
+
+codBO.addEventListener(`click`, () => {
+  jogo1.value = "Call of Duty - Black Ops";
+  valorp = 50.0;
+});
+
+lego.addEventListener(`click`, () => {
+  jogo1.value = "Lego - Jurassic Park";
+  valorp = 20.0;
+});
+
+farcry.addEventListener(`click`, () => {
+  jogo1.value = "FarCry V";
+  valorp = 120.0;
+});
+
+doom.addEventListener(`click`, () => {
+  jogo1.value = "Doom";
+  valorp = 170.0;
+});
+
+cod3.addEventListener(`click`, () => {
+  jogo1.value = "Call of Duty MW 2 - Versão Extendida";
+  valorp = 135.0;
+});
+
+addCarrinho.addEventListener("click", () => {
+  var qtd = Number(qtdGame.value);
+  var opcao = jogo1.value;
+  totalGame = qtd * valorp;
+  carrinho.innerHTML += `<p>${opcao}  (${qtd}x)   <strong>R$ ${totalGame}</strong> </p>`;
+
+  soma += totalGame;
+  valorTotal.innerHTML = `<p> R$ ${soma} </p>`;
+});
+
+    </script>
+</body>
+
+</html>
